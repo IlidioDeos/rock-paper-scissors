@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+}
+
+/*Através do flexbox centraliza os emojis no centro da pagina */
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+/*Tira todo o efeito que estava poluindo dos emotes */
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: 100ms;
+}
+
+/*Faz com que o icone fique maior ao passar o mouse em cima */
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.results{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,0.1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: 2rem;
+    color: black;
+}
